@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F6F9"
+    android:fillViewport="true"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Completa tu Perfil"
+            android:textColor="#1F2937"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ingresa tus datos personales a continuación"
+            android:textColor="#6B7280"
+            android:textSize="14sp"
+            android:layout_marginBottom="24dp" />
+
+
+        <EditText
+            android:id="@+id/etNombres"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:background="@android:drawable/editbox_background"
+            android:hint="Nombres y apellidos"
+            android:textColor="#111827"
+            android:textColorHint="#9CA3AF"
+            android:inputType="textPersonName"
+            android:paddingHorizontal="16dp"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp" />
+
+        <EditText
+            android:id="@+id/etCorreo"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:background="@android:drawable/editbox_background"
+            android:hint="Correo electrónico"
+            android:textColor="#111827"
+            android:textColorHint="#9CA3AF"
+            android:inputType="textEmailAddress"
+            android:paddingHorizontal="16dp"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp" />
+
+        <EditText
+            android:id="@+id/etTelefono"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:background="@android:drawable/editbox_background"
+            android:hint="Teléfono (12345678)"
+            android:textColor="#111827"
+            android:textColorHint="#9CA3AF"
+            android:inputType="phone"
+            android:maxLength="8"
+            android:paddingHorizontal="16dp"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp" />
+
+        <EditText
+            android:id="@+id/etFechaNacimiento"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:background="@android:drawable/editbox_background"
+            android:hint="Fecha de nacimiento (DD/MM/AAAA)"
+            android:textColor="#111827"
+            android:textColorHint="#9CA3AF"
+            android:inputType="date"
+            android:paddingHorizontal="16dp"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp" />
+
+        <EditText
+            android:id="@+id/etDireccion"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:background="@android:drawable/editbox_background"
+            android:hint="Dirección de residencia"
+            android:textColor="#111827"
+            android:textColorHint="#9CA3AF"
+            android:inputType="textPostalAddress"
+            android:paddingHorizontal="16dp"
+            android:textSize="16sp"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Sección de Cámara y Permisos -->
+        <Button
+            android:id="@+id/btnTomarFoto"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:backgroundTint="#4B5563"
+            android:text="📷 Tomar Foto"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tvEstadoPermiso"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Permiso de cámara: No solicitado"
+            android:textColor="#4B5563"
+            android:textSize="13sp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Botón de Guardar Principal -->
+        <Button
+            android:id="@+id/btnGuardar"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:backgroundTint="#2563EB"
+            android:text="Guardar Perfil"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</ScrollView>
